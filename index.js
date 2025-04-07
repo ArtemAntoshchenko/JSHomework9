@@ -24,7 +24,6 @@ function Student(name, group) {
     let grades={}
     this.addGrade=function(subjectName,grade) {
         grades[subjectName]=grade
-        // this.subjectName=subjectName
     }
     this.getAverage=function(){
         let gradeList=Object.values(grades)
@@ -75,6 +74,8 @@ function Product(name, price, discount=0) {
     this.price=price
     this.discount=discount
     this.getFinalPrice=function() {
+        // let pprice=price.valueOf()
+        // let pdiscount=discount.valueOf()
         return this.price-this.discount
     }
     this.setDiscount=function(newDiscount){
